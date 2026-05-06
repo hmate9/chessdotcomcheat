@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "Chess.com Best Move",
+  "version": "1.0.0",
+  "description": "Shows Stockfish best-move arrows and evaluation while you play on Chess.com",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.chess.com/*",
+    "https://chess.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.chess.com/*",
+        "https://chess.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "stockfish/*",
+        "page-bridge.js"
+      ],
+      "matches": [
+        "https://www.chess.com/*",
+        "https://chess.com/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

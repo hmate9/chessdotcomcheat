@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Chess.com Best Move</h1>
+    <span class="version">v1.0</span>
+  </div>
+
+  <label class="toggle-row">
+    <span>Enabled</span>
+    <input type="checkbox" id="enabled" checked>
+  </label>
+
+  <div class="control-group">
+    <label for="moveTime">Think time (ms)</label>
+    <input type="range" id="moveTime" min="200" max="5000" step="100" value="1000">
+    <span class="value-label" id="moveTimeValue">1000 ms</span>
+  </div>
+
+  <div class="control-group">
+    <label for="multiPv">Lines shown</label>
+    <input type="range" id="multiPv" min="1" max="3" step="1" value="1">
+    <span class="value-label" id="multiPvValue">1</span>
+  </div>
+
+  <div class="control-group">
+    <label class="toggle-row">
+      <span>Show evaluation</span>
+      <input type="checkbox" id="showEval" checked>
+    </label>
+  </div>
+
+  <div class="control-group">
+    <label class="toggle-row">
+      <span>Show depth</span>
+      <input type="checkbox" id="showDepth" checked>
+    </label>
+  </div>
+
+  <div class="footer">
+    <button id="resetBtn" class="btn-secondary">Reset defaults</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
