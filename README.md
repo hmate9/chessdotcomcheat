@@ -26,8 +26,8 @@ No build step is required. Chrome can load this folder directly as an unpacked e
 1. Clone or download this repository.
 
    ```sh
-   git clone <repo-url>
-   cd chess_chrome
+   git clone https://github.com/hmate9/chessdotcomcheat.git
+   cd chessdotcomcheat
    ```
 
 2. Open Chrome.
@@ -45,10 +45,10 @@ No build step is required. Chrome can load this folder directly as an unpacked e
 6. Select this repository folder:
 
    ```text
-   /Users/mate/work/chess_chrome
+   path/to/chessdotcomcheat
    ```
 
-   If you cloned the repo somewhere else, select that `chess_chrome` folder instead. The selected folder must contain `manifest.json` at its top level.
+   If you cloned the repo somewhere else, select that `chessdotcomcheat` folder instead. The selected folder must contain `manifest.json` at its top level.
 
 7. Confirm that Chrome shows an extension named Chess.com Best Move.
 
